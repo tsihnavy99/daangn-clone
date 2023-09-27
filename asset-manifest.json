@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.57db7f5c.css",
-    "main.js": "/static/js/main.f4d16c42.js",
-    "static/js/787.db7f0c0f.chunk.js": "/static/js/787.db7f0c0f.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.d29b5a5f5bd75f40c83e7561de7e6e46.svg",
-    "index.html": "/index.html",
-    "main.57db7f5c.css.map": "/static/css/main.57db7f5c.css.map",
-    "main.f4d16c42.js.map": "/static/js/main.f4d16c42.js.map",
-    "787.db7f0c0f.chunk.js.map": "/static/js/787.db7f0c0f.chunk.js.map"
+    "main.css": "/daangn-clone/static/css/main.57db7f5c.css",
+    "main.js": "/daangn-clone/static/js/main.d6c64f13.js",
+    "static/js/787.db7f0c0f.chunk.js": "/daangn-clone/static/js/787.db7f0c0f.chunk.js",
+    "static/media/logo.svg": "/daangn-clone/static/media/logo.d29b5a5f5bd75f40c83e7561de7e6e46.svg",
+    "index.html": "/daangn-clone/index.html",
+    "main.57db7f5c.css.map": "/daangn-clone/static/css/main.57db7f5c.css.map",
+    "main.d6c64f13.js.map": "/daangn-clone/static/js/main.d6c64f13.js.map",
+    "787.db7f0c0f.chunk.js.map": "/daangn-clone/static/js/787.db7f0c0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57db7f5c.css",
-    "static/js/main.f4d16c42.js"
+    "static/js/main.d6c64f13.js"
   ]
 }
