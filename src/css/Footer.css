@@ -1,0 +1,181 @@
+footer {
+  position: sticky;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+  max-width: calc(100vw - 10px); /* 스크롤바 width: 8px */
+  padding-bottom: 100px;
+  left: 0;
+}
+footer[is_pc='true'] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+li,
+span,
+li > a {
+  letter-spacing: 0.002rem;
+}
+a {
+  color: #000;
+}
+.download-links {
+  padding: 10px 16px;
+  margin-top: 40px;
+}
+.download-links a {
+  margin-left: 30px;
+}
+.download-links span {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.download-links span > svg {
+  margin-bottom: -2px;
+  margin-left: 6px;
+}
+.download-btn {
+  margin-left: 20px;
+}
+.download-btn span {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.download-btn .btn-container {
+  display: flex;
+  margin-top: 10px;
+}
+.download-btn .btn-container .btn {
+  font-size: 0.9rem;
+  letter-spacing: 0.016rem;
+  padding: 10px 18px;
+  margin-right: 10px;
+  background-color: #efeff4;
+}
+.download-btn .btn-container .btn:hover {
+  color: #75777b;
+  background-color: #efeff4;
+}
+
+.survice-list {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  min-width: 90vw;
+}
+.survice-list[is_pc='true'] {
+  margin-top: 40px;
+}
+.survice-list ul li {
+  color: #333;
+  font-size: 0.8rem;
+  padding: 20px 30px;
+  white-space: nowrap;
+  overflow: visible;
+}
+.survice-list ul li a:hover {
+  text-decoration: underline;
+}
+
+.infos {
+  border-top: 1px solid #eee;
+  margin: 40px 14px;
+  padding-top: 26px;
+}
+.infos p {
+  color: #999;
+  font-size: 0.74rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.4;
+}
+.infos span {
+  margin-right: 3px;
+  font-weight: 700;
+}
+.infos .right::before {
+  content: '';
+  display: inline-block;
+  height: 0.6rem;
+  width: 0.1rem;
+  background-color: #ddd;
+  margin: 0 4px;
+}
+.infos .inquiry {
+  margin: 1rem 0;
+}
+.infos .inquiry span,
+.infos .terms span {
+  margin-right: 16px;
+}
+.infos .inquiry a,
+.infos .terms a {
+  letter-spacing: 0.01rem;
+  color: #999;
+  white-space: nowrap;
+  overflow: visible;
+}
+.infos .inquiry a:hover,
+.infos .terms a:hover {
+  text-decoration: underline;
+}
+.infos #privacy a {
+  color: #444;
+}
+.select-container {
+  display: inline-block;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons svg {
+  color: #888;
+}
+.icons > svg {
+  margin-left: 16px;
+}
+.icons > svg:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+.icons label {
+  border-radius: 6px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 1.6rem;
+}
+.icons label:hover {
+  background-color: #eee;
+}
+.icons select {
+  border: none;
+  color: #888;
+  background-color: transparent;
+  appearance: none;
+  padding: 8px 26px;
+  z-index: 1;
+  margin-top: 0.16rem;
+  outline: none;
+  cursor: pointer;
+}
+.icons label svg {
+  position: absolute;
+  transition: 0.4s;
+}
+.icons label svg.world-icon {
+  left: 6px;
+}
+.icons label svg.down-arr {
+  display: inline-block;
+  margin: auto 0;
+  right: 6px;
+}
+.pc-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.pc-icon-container .icons {
+  margin-left: 50px;
+}
