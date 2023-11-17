@@ -25,3 +25,4 @@
 - Footer 언어 선택 select 수정<br>
   ![수정4](https://github.com/tsihnavy99/daangn-clone/assets/70021587/592b41b2-ff2b-4d60-967f-919f1d638a21)
 
+- 화면 너비에 따라 컨텐츠가 잘리지 않게 수정
