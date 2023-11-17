@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import '../css/Header.css';
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
@@ -6,6 +8,25 @@ import { CiSearch, CiMenuBurger } from 'react-icons/ci';
 import { TfiClose } from 'react-icons/tfi';
 
 const Header = () => {
+  const [keywords, setKeywords] = useState([])
+
+  useEffect(() => {
+    axios.get('https://www.daangn.com/web/search/keywords')
+      .then(response => {
+        setKeywords(response.data.keywords);
+      }).catch(error => {
+        console.log(error);
+      })
+  }, [])
+
+  const renderKeywords = () => {
+    return keywords.map((keyword) => (
+      <Link key={'link_'+keyword}>
+        <li key={'li_'+keyword}>{keyword}</li>
+      </Link>
+    ))
+  }
+
   const searchSetHidden = (hidden = false) => {
     const mobileSearch = document.querySelector('section.mobile-search');
     if (hidden) {
@@ -64,7 +85,8 @@ const Header = () => {
         <div className="recommend">
           <span>추천</span>
           <ul className="list">
-            <Link to="/">
+            {keywords.length>0?renderKeywords():null}
+            {/* <Link to="/">
               <li>축전 자전거</li>
             </Link>
             <Link to="/">
@@ -81,7 +103,7 @@ const Header = () => {
             </Link>
             <Link to="/">
               <li>화분</li>
-            </Link>
+            </Link> */}
           </ul>
         </div>
       </section>

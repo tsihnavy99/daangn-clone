@@ -10,6 +10,7 @@ import {
 } from 'react-icons/bi';
 import { TbWorld } from 'react-icons/tb';
 import { FaApple, FaGooglePlay } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const isPC = useMediaQuery({
@@ -76,55 +77,55 @@ const Footer = () => {
       ) : (
         <div className="download-links">
           <span>당근 앱 다운로드</span>
-          <a href="/">
+          <Link to="/">
             <span>
               Android
               <PiArrowUpRightLight size={18} />
             </span>
-          </a>
-          <a href="/">
+          </Link>
+          <Link to="/">
             <span>
               iOS
               <PiArrowUpRightLight size={18} />
             </span>
-          </a>
+          </Link>
         </div>
       )}
       <div className="survice-list" is_pc={String(isPC)}>
         <ul className="list1">
           <li>
-            <a href="/">중고거래</a>
+            <Link to="/">중고거래</Link>
           </li>
           <li>
-            <a href="/">동네가게</a>
+            <Link to="/">동네가게</Link>
           </li>
           <li>
-            <a href="/">당근알바</a>
+            <Link to="/">당근알바</Link>
           </li>
           <li>
-            <a href="/">부동산 직거래</a>
+            <Link to="/">부동산 직거래</Link>
           </li>
           <li>
-            <a href="/">중고차 직거래</a>
+            <Link to="/">중고차 직거래</Link>
           </li>
         </ul>
         <ul className="list2">
           <li>
-            <a href="/">당근비즈니스</a>
+            <Link to="/">당근비즈니스</Link>
           </li>
           <li>
-            <a href="/">채팅하기</a>
+            <Link to="/">채팅하기</Link>
           </li>
         </ul>
         <ul className="list3">
           <li>
-            <a href="/">자주 묻는 질문</a>
+            <Link to="/">자주 묻는 질문</Link>
           </li>
           <li>
-            <a href="/">회사 소개</a>
+            <Link to="/">회사 소개</Link>
           </li>
           <li>
-            <a href="/">인재 채용</a>
+            <Link to="/">인재 채용</Link>
           </li>
         </ul>
         {isPC /* PC용 다운로드 링크 */ ? (
@@ -156,33 +157,33 @@ const Footer = () => {
         )}
         <p className="inquiry">
           <span>
-            <a href="/">제휴 문의</a>
+            <Link to="/">제휴 문의</Link>
           </span>
           <span>
-            <a href="/">광고 문의</a>
+            <Link to="/">광고 문의</Link>
           </span>
           <span>
-            <a href="/">PR 문의</a>
+            <Link to="/">PR 문의</Link>
           </span>
           <span>
-            <a href="/">IR 문의</a>
+            <Link to="/">IR 문의</Link>
           </span>
         </p>
         <p className="terms">
           <span>
-            <a href="/">이용약관</a>
+            <Link to="/">이용약관</Link>
           </span>
           <span id="privacy">
-            <a href="/">개인정보처리방침</a>
+            <Link to="/">개인정보처리방침</Link>
           </span>
           <span>
-            <a href="/">위치기반서비스 이용약관</a>
+            <Link to="/">위치기반서비스 이용약관</Link>
           </span>
           <span>
-            <a href="/">이용자보호 비전과 계획</a>
+            <Link to="/">이용자보호 비전과 계획</Link>
           </span>
           <span>
-            <a href="/">청소년보호정책</a>
+            <Link to="/">청소년보호정책</Link>
           </span>
         </p>
       </div>

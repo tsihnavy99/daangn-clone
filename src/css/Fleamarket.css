@@ -1,0 +1,154 @@
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.header {
+  background-color: #FFF1AA;
+  padding: 24px;
+}
+.header div {
+  max-width: 800px;
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1.6;
+}
+.header h1 {
+  z-index: 1;
+}
+.header .bg-img {
+  max-width: 40vw;
+  width: 300px;
+  height: 200px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('https://d1unjqcospf8gs.cloudfront.net/assets/home/main/mobile/3x/fleamarket-1caf5c24c82acb20bd86fa8c018987be7812a1f0ce0858dcf175568bfc3cf87d.webp');
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+/* 물품 목록 */
+.item-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.item-list h3 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.item-list ul.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.item-list ul.items li {
+  box-sizing: border-box;
+  max-width: 30vw;
+  width: 240px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.item-list ul.items li .img {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #eed;
+  opacity: .7;
+  justify-content: center;
+}
+.item-list ul.items li p {
+  line-height: 1.6;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-list ul.items li p.price {
+  font-weight: 700;
+}
+.item-list ul.items li p.location,
+.item-list ul.items li p.etc {
+  font-size: .86rem;
+}
+.item-list ul.items li p.etc {
+  color: #888;
+}
+.item-list ul.items li p.etc span:first-child::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #888;
+  margin: 0 2px;
+}
+.load-more-btn {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  .item-list ul.items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-list ul.items li {
+    max-width: 44vw;
+    width: 510px;
+  }
+}
+@media (max-width: 500px) {
+  .item-list ul.items li {
+    max-width: 43vw;
+  }
+  .header {
+    position: relative;
+  }
+  .header div {
+    position: static;
+  }
+  .header .bg-img {
+    max-width: 70vw;
+    bottom: 0;
+    right: 10px;
+    background-position: bottom;
+  }
+}
+
+/* 인기검색어 */
+.search-keywords {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+.search-keywords ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+@media (max-width: 768px) {
+  .search-keywords ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .search-keywords li {
+    text-align: center;
+  }
+}

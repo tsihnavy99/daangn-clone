@@ -1,10 +1,21 @@
 html {
   position: absolute;
-  min-width: 100%;
-  max-width: none;
+  width: 100%;
+  overflow-x: hidden;
   min-height: 100%;
   max-height: 100%;
   scrollbar-width: 10px;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -24,4 +35,9 @@ html {
 ::-webkit-scrollbar-track {
   background-color: rgba(255, 111, 15, .2);
   border-radius: 4px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
 }
